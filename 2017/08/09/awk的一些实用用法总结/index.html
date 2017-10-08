@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>awk的一些用法总结 | panda&#39;s room</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="awk是一种文本处理的工具，用途大概就类似于grep和sed，但是其更为强大且便捷。awk已经具备一种语言的特质，引入变量、流控制、编程语句等都可以实现，因此在文本处理的过程中优势明显。一开始接触awk是用来处理下载得到的地震数据的，提取感兴趣的行列，改变格式等。发现虽然awk容易上手，但在运用的过程中还是需要一定经验和技巧的，所以把一些常用到的用法总结一下，以备后用。">
+  <meta name="description" content="awk是一种文本处理的工具，用途大概就类似于grep和sed，但是其更为强大且便捷。awk已经具备一种语言的特质，引入变量、流控制、编程语句等都可以实现，因此在文本处理的过程中优势明显。一开始接触awk是用来处理下载得到的地震数据的，提取感兴趣的行列，改变格式等。发现虽然awk容易上手，但在运用的过程中还是需要一定经验和技巧的，所以把一些常用到的用法总结一下，以备后用。啦啦啦～">
 <meta name="keywords" content="AWK">
 <meta property="og:type" content="article">
 <meta property="og:title" content="awk的一些用法总结">
 <meta property="og:url" content="http://yoursite.com/2017/08/09/awk的一些实用用法总结/index.html">
 <meta property="og:site_name" content="panda&#39;s room">
-<meta property="og:description" content="awk是一种文本处理的工具，用途大概就类似于grep和sed，但是其更为强大且便捷。awk已经具备一种语言的特质，引入变量、流控制、编程语句等都可以实现，因此在文本处理的过程中优势明显。一开始接触awk是用来处理下载得到的地震数据的，提取感兴趣的行列，改变格式等。发现虽然awk容易上手，但在运用的过程中还是需要一定经验和技巧的，所以把一些常用到的用法总结一下，以备后用。">
-<meta property="og:updated_time" content="2017-09-28T10:44:06.374Z">
+<meta property="og:description" content="awk是一种文本处理的工具，用途大概就类似于grep和sed，但是其更为强大且便捷。awk已经具备一种语言的特质，引入变量、流控制、编程语句等都可以实现，因此在文本处理的过程中优势明显。一开始接触awk是用来处理下载得到的地震数据的，提取感兴趣的行列，改变格式等。发现虽然awk容易上手，但在运用的过程中还是需要一定经验和技巧的，所以把一些常用到的用法总结一下，以备后用。啦啦啦～">
+<meta property="og:updated_time" content="2017-10-08T11:16:07.341Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="awk的一些用法总结">
-<meta name="twitter:description" content="awk是一种文本处理的工具，用途大概就类似于grep和sed，但是其更为强大且便捷。awk已经具备一种语言的特质，引入变量、流控制、编程语句等都可以实现，因此在文本处理的过程中优势明显。一开始接触awk是用来处理下载得到的地震数据的，提取感兴趣的行列，改变格式等。发现虽然awk容易上手，但在运用的过程中还是需要一定经验和技巧的，所以把一些常用到的用法总结一下，以备后用。">
+<meta name="twitter:description" content="awk是一种文本处理的工具，用途大概就类似于grep和sed，但是其更为强大且便捷。awk已经具备一种语言的特质，引入变量、流控制、编程语句等都可以实现，因此在文本处理的过程中优势明显。一开始接触awk是用来处理下载得到的地震数据的，提取感兴趣的行列，改变格式等。发现虽然awk容易上手，但在运用的过程中还是需要一定经验和技巧的，所以把一些常用到的用法总结一下，以备后用。啦啦啦～">
   
   
     <link rel="icon" href="/favicon.png">
@@ -153,14 +153,14 @@
 
         
         <a href="/2017/08/09/awk的一些实用用法总结/" class="archive-article-date">
-  	<time datetime="2017-08-09T01:24:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-09</time>
+  	<time datetime="2017-08-09T01:24:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-09</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>awk是一种文本处理的工具，用途大概就类似于grep和sed，但是其更为强大且便捷。awk已经具备一种语言的特质，引入变量、流控制、编程语句等都可以实现，因此在文本处理的过程中优势明显。<br>一开始接触awk是用来处理下载得到的地震数据的，提取感兴趣的行列，改变格式等。发现虽然awk容易上手，但在运用的过程中还是需要一定经验和技巧的，所以把一些常用到的用法总结一下，以备后用。</p>
+        <p>awk是一种文本处理的工具，用途大概就类似于grep和sed，但是其更为强大且便捷。awk已经具备一种语言的特质，引入变量、流控制、编程语句等都可以实现，因此在文本处理的过程中优势明显。<br>一开始接触awk是用来处理下载得到的地震数据的，提取感兴趣的行列，改变格式等。发现虽然awk容易上手，但在运用的过程中还是需要一定经验和技巧的，所以把一些常用到的用法总结一下，以备后用。啦啦啦～</p>
 
       
 
@@ -243,6 +243,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2017/10/08/InSAR/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          InSAR
+        
+      </div>
+    </a>
   
   
     <a href="/2017/07/17/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
